@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "image": "https://i.ibb.co/Y8F2c5X/Apple.jpg",
+    "urlPath": "/apple"
+  },
+  {
+    "id": 2,
+    "name": "Google",
+    "image": "https://i.ibb.co/RDzTpz0/google.jpg",
+    "urlPath": "/google"
+  },
+  {
+    "id": 3,
+    "name": "Samsung",
+    "image": "https://i.ibb.co/1d8kkCt/samsung.jpg",
+    "urlPath": "/samsung"
+  },
+  {
+    "id": 4,
+    "name": "Sony",
+    "image": "https://i.ibb.co/xm2sGXH/sony.jpg",
+    "urlPath": "/sony"
+  },
+  {
+    "id": 5,
+    "name": "Huawei",
+    "image": "https://i.ibb.co/YZM186f/Huawei.jpg",
+    "urlPath": "/huawei"
+  },
+  {
+    "id": 6,
+    "name": "Xiaomi",
+    "image": "https://i.ibb.co/dcdMg5d/xiaomi.jpg",
+    "urlPath": "/xiaomi"
+  }
+]
