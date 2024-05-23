@@ -26,7 +26,7 @@ const AddProduct = () => {
       price,
     };
     // post data
-    fetch(`http://localhost:5000/${brand}`, {
+    fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/${brand}`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -54,14 +54,9 @@ const AddProduct = () => {
       <p className="dark:text-white border-b-2 w-fit mx-auto mb-5  text-center text-2xl font-semibold">
         Add Your Product
       </p>
-      <form
-        onSubmit={handleSubmitData}
-        className="md:w-1/2 w-[90vw] shadow-md p-10 dark:shadow-emerald-50  mx-auto"
-      >
+      <form onSubmit={handleSubmitData} className="md:w-1/2 w-[90vw] shadow-md p-10 dark:shadow-emerald-50  mx-auto">
         <div className="mb-6">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Product Name
-          </label>
+          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Name</label>
           <input
             type="text"
             id="productName"
@@ -70,9 +65,7 @@ const AddProduct = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Product Image
-          </label>
+          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Image</label>
           <input
             type="text"
             id="image"
@@ -81,9 +74,7 @@ const AddProduct = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Product Type
-          </label>
+          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Type</label>
           <input
             type="text"
             id="productType"
@@ -92,9 +83,7 @@ const AddProduct = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Rating
-          </label>
+          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rating</label>
           <input
             type="text"
             id="rating"
@@ -104,9 +93,7 @@ const AddProduct = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Price
-          </label>
+          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
           <input
             type="text"
             id="price"
@@ -115,9 +102,7 @@ const AddProduct = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Short Description
-          </label>
+          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Short Description</label>
           <input
             name="description"
             type="text"
@@ -130,8 +115,7 @@ const AddProduct = () => {
           <input type="radio" name="brand" value="apple" />
           <label>Apple</label>
           <br />
-          <input type="radio" name="brand" value="samsung" />{" "}
-          <label>Samsung</label>
+          <input type="radio" name="brand" value="samsung" /> <label>Samsung</label>
           <br />
           <input type="radio" name="brand" value="google" />
           <label>Google</label>

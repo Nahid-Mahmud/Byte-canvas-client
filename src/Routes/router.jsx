@@ -43,7 +43,7 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoutes>
         ),
-        loader: () => fetch("http://localhost:5000/cart"),
+        loader: () => fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/cart"),
       },
       {
         path: "/logIn",
@@ -56,32 +56,32 @@ const router = createBrowserRouter([
       {
         path: "/google",
         element: <Gooogle></Gooogle>,
-        loader: () => fetch("http://localhost:5000/google"),
+        loader: () => fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/google"),
       },
       {
         path: "/apple",
         element: <Apple></Apple>,
-        loader: () => fetch("http://localhost:5000/apple"),
+        loader: () => fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/apple"),
       },
       {
         path: "/samsung",
         element: <Samsung></Samsung>,
-        loader: () => fetch("http://localhost:5000/samsung"),
+        loader: () => fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/samsung"),
       },
       {
         path: "/sony",
         element: <Sony></Sony>,
-        loader: () => fetch("http://localhost:5000/sony"),
+        loader: () => fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/sony"),
       },
       {
         path: "/huawei",
         element: <Huawei></Huawei>,
-        loader: () => fetch("http://localhost:5000/huawei"),
+        loader: () => fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/huawei"),
       },
       {
         path: "/xiaomi",
         element: <Xiaomi></Xiaomi>,
-        loader: () => fetch("http://localhost:5000/xiaomi"),
+        loader: () => fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/xiaomi"),
       },
       {
         path: "/apple/:id",
@@ -90,8 +90,7 @@ const router = createBrowserRouter([
             <ViewProductDetail></ViewProductDetail>
           </PrivateRoutes>
         ),
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/apple/${params.id}`),
+        loader: ({ params }) => fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/apple/${params.id}`),
       },
       {
         path: "/google/:id",
@@ -101,7 +100,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/google/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/google/${params.id}`),
       },
       {
         path: "/sony/:id",
@@ -110,8 +109,7 @@ const router = createBrowserRouter([
             <ViewProductDetail></ViewProductDetail>
           </PrivateRoutes>
         ),
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/sony/${params.id}`),
+        loader: ({ params }) => fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/sony/${params.id}`),
       },
       {
         path: "/huawei/:id",
@@ -121,7 +119,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/huawei/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/huawei/${params.id}`),
       },
       {
         path: "/xiaomi/:id",
@@ -131,7 +129,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/xiaomi/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/xiaomi/${params.id}`),
       },
       {
         path: "/samsung/:id",
@@ -141,7 +139,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/samsung/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/samsung/${params.id}`),
       },
       {
         path: "/apple/:id/update",
@@ -150,8 +148,7 @@ const router = createBrowserRouter([
             <UpdatedProduct></UpdatedProduct>
           </PrivateRoutes>
         ),
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/apple/${params.id}`),
+        loader: ({ params }) => fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/apple/${params.id}`),
       },
       {
         path: "/google/:id/update",
@@ -161,7 +158,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/google/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/google/${params.id}`),
       },
       {
         path: "/sony/:id/update",
@@ -170,8 +167,7 @@ const router = createBrowserRouter([
             <UpdatedProduct></UpdatedProduct>
           </PrivateRoutes>
         ),
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/sony/${params.id}`),
+        loader: ({ params }) => fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/sony/${params.id}`),
       },
       {
         path: "/huawei/:id/update",
@@ -181,7 +177,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/huawei/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/huawei/${params.id}`),
       },
       {
         path: "/xiaomi/:id/update",
@@ -191,7 +187,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/xiaomi/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/xiaomi/${params.id}`),
       },
       {
         path: "/samsung/:id/update",
@@ -201,7 +197,7 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/samsung/${params.id}`),
+          fetch(`https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/samsung/${params.id}`),
       },
     ],
   },

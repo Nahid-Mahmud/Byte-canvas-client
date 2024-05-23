@@ -37,7 +37,7 @@ const LogIn = () => {
 
         const user = { email };
         axios
-          .post("http://localhost:5000/jwt", user, { withCredentials: true })
+          .post("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/jwt", user, { withCredentials: true })
           .then((res) => {
             console.log(res.data);
             if (res.data.success) {
@@ -83,17 +83,12 @@ const LogIn = () => {
   return (
     <div className="dark:bg-gray-900 flex flex-col gap-10 py-10  ">
       <div className=" mx-auto  shadow-md dark:shadow-emerald-50   lg:w-1/2">
-        <form
-          onSubmit={emailPassLogin}
-          className="dark:bg-gray-900 rounded px-8 p-6    "
-        >
+        <form onSubmit={emailPassLogin} className="dark:bg-gray-900 rounded px-8 p-6    ">
           <p className="capitalize text-2xl font-bold text-center dark:text-white m-10 border-b w-fit mx-auto">
             log in to your ByteCanvas Account!{" "}
           </p>
           <div className="mb-4">
-            <label className="block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2">
-              Email
-            </label>
+            <label className="block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2">Email</label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
@@ -104,9 +99,7 @@ const LogIn = () => {
             />
           </div>
           <div className="mb-6">
-            <label className="block dark:text-gray-200  text-gray-700 text-sm font-bold mb-2">
-              Password
-            </label>
+            <label className="block dark:text-gray-200  text-gray-700 text-sm font-bold mb-2">Password</label>
             <input
               className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
               id="password"

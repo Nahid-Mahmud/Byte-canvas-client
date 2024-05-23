@@ -5,16 +5,7 @@ import Swal from "sweetalert2";
 const ViewProductDetail = () => {
   const data = useLoaderData();
 
-  const {
-    _id,
-    brand,
-    description,
-    image,
-    price,
-    productName,
-    productType,
-    rating,
-  } = data;
+  const { _id, brand, description, image, price, productName, productType, rating } = data;
   console.log(data);
   // post data
   const newCrtdDaata = {
@@ -28,7 +19,7 @@ const ViewProductDetail = () => {
   };
   console.log(newCrtdDaata);
   const handleCart = () => {
-    fetch("http://localhost:5000/cart", {
+    fetch("https://brand-shop-server-infqfbok2-nahid-mahmud.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
